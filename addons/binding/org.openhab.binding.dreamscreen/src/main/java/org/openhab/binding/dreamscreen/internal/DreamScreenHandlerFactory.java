@@ -80,7 +80,7 @@ public class DreamScreenHandlerFactory extends BaseThingHandlerFactory {
         server.setHostAddress(networkAddressService.getPrimaryIpv4HostAddress());
     }
 
-    // protected void unsetNetworkAddressService(NetworkAddressService networkAddressService) {
-    // this.networkAddressService = null;
-    // }
+    protected void unsetNetworkAddressService(NetworkAddressService networkAddressService) {
+        // nothing to really unset. This just needed to grab the primary IPv4 host address.
+    }
 }
